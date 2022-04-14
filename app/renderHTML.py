@@ -38,7 +38,7 @@ def renderPage(filename):
         page = pageTemplate.render()
         
         filename=Path(filename)
-        if lang == "en_US":
+        if lang == "zh_CN":
             outfile = filename
         else:
             outfile = filename.parent / (filename.stem + "." + lang + ".html")
